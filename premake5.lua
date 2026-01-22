@@ -8,15 +8,15 @@ project "efsw-static"
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
    files {
-      "/src/**.cpp",
-      "/src/**.h",
-      "/include/efsw/**.h",
-      "/include/efsw/**.hpp"
+      "src/**.cpp",
+      "src/**.hpp",
+      "include/efsw/**.h",
+      "include/efsw/**.hpp"
    }
 
    includedirs {
-      "/include",
-      "/src"
+      "include",
+      "src"
    }
 
    	filter "system:windows"
